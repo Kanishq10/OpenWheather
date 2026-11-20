@@ -1,47 +1,48 @@
 # OpenWheather
 
-**Portfolio project** · A browser weather application that fetches and presents data for a selected location.
+A browser weather interface that retrieves and presents current weather information.
 
 ## Overview
 
-A browser weather application that fetches and presents data for a selected location.
+The repository contains an implemented application or analysis project with code organized around its primary runtime, interface, data, or automation responsibilities.
+
+## Key Features
+
+- Node.js command execution or server runtime
+- Modular source organization
+- External I/O or API integration
+- Scripted or interactive output
 
 ## Technology Stack
 
-- `Node.js`
-- `Express`
-- `HTML`
-- `JavaScript`
+| Area | Technology |
+|---|---|
+| Platform | Node.js |
+| Library / Framework / Tool | Express |
+| Library / Framework / Tool | HTML |
+| Library / Framework / Tool | JavaScript |
 
-## How the Repository Works
+## Architecture and Data Flow
 
 ```mermaid
 flowchart LR
-    N0["Input<br/> Accept a target or search value"]
-    N1["Automation / Request<br/> Fetch or control the external resource"]
+    N0["Input<br/> The target, query, or automation action is accepted."]
+    N1["External Operation<br/> HTTP, DOM automation, or browser tooling executes the task."]
+    N2["Data Processing<br/> The returned or collected data is parsed."]
+    N3["Output<br/> Results are rendered, logged, or exported."]
     N0 --> N1
-    N2["Parse<br/> Extract relevant data"]
     N1 --> N2
-    N3["Output<br/> Render or export the result"]
     N2 --> N3
 ```
 
 | Stage | Responsibility |
 |---|---|
-| **Input** | Accept a target or search value |
-| **Automation / Request** | Fetch or control the external resource |
-| **Parse** | Extract relevant data |
-| **Output** | Render or export the result |
+| **Input** | The target, query, or automation action is accepted. |
+| **External Operation** | HTTP, DOM automation, or browser tooling executes the task. |
+| **Data Processing** | The returned or collected data is parsed. |
+| **Output** | Results are rendered, logged, or exported. |
 
-## Concepts Covered
-
-- JavaScript runtime
-- Asynchronous I/O
-- Modules and packages
-- HTTP or CLI workflows
-- External integrations
-
-## Repository Map
+## Repository Structure
 
 - `.gitignore`
 - `app.js`
@@ -49,10 +50,20 @@ flowchart LR
 - `package-lock.json`
 - `package.json`
 
-## Recruiter Summary
+## Setup
 
-This repository demonstrates practical implementation skills, repository organization, and an end-to-end understanding of the project workflow. It is suitable as a focused example of applied software or data work.
+1. Install Node.js and npm.
+2. Run `npm install` from the repository root.
+3. Start the project with the applicable script below.
 
----
+## Usage
 
-<sub>Documentation is concise and project-focused; source code was not modified.</sub>
+- `npm run test` — echo "Error: no test specified" && exit 1
+
+## Configuration
+
+Review `package.json` for available scripts and runtime dependencies. Add environment variables locally only when a feature requires external credentials or service configuration.
+
+## Verification
+
+- `npm run test` — echo "Error: no test specified" && exit 1
